@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+     >
+<GridLayout 
+    android:id="@+id/GridLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:rowCount="4"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    tools:context=".GridXMLActivity" 
+    android:scrollbars="vertical"
+    >
+  <!--  
+     <TextView 
+      android:id="@+id/txtSearch"
+      android:layout_gravity="left|top"
+      android:layout_columnSpan="2"
+      android:text="Search ads by keywords and city"
+      android:textSize="17dp"
+      android:textStyle="bold"
+      android:layout_marginBottom="15dp"/> -->
+    
+
+   <TextView 
+      android:id="@+id/txtKeyword"
+      android:text="Keyword"
+      android:layout_gravity="left|bottom"
+      android:textSize="18dp"
+      android:layout_marginRight="5dp"/>
+   
+   <EditText 
+       android:id="@+id/inputKeyword"
+       android:layout_gravity="left|top"
+       android:inputType="text"
+       android:layout_width="match_parent"
+       android:background="@color/light_gray"
+       android:textSize="20dp"
+       />
+   
+    <TextView 
+      android:id="@+id/txtCity"
+      android:text="City"
+      android:layout_gravity="left|bottom"
+      android:textSize="18dp"
+      android:layout_marginTop="5dp"
+      android:layout_marginRight="5dp"
+      />
+   
+    <EditText 
+       android:id="@+id/inputCity"
+       android:layout_gravity="left|top"
+       android:layout_width="match_parent"
+       android:background="@color/light_gray"
+       android:layout_marginTop="5dp"
+       android:textSize="20dp"
+       />
+
+
+    
+     <Button
+        android:id="@+id/btnSearch"
+         android:layout_gravity="left|top"
+        android:layout_columnSpan="2"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:text="Search ads" 
+        android:background="@color/list_background_pressed"
+        android:textColor="@color/white_color"
+        
+        />
+     
+   
+     
+</GridLayout>
+
+<ListView 
+	    android:id="@+id/lstSearchAds"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    
+	    />
+
+
+</LinearLayout>

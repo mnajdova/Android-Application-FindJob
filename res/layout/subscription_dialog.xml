@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_margin="15dp">
+    
+<TextView 
+    android:id="@+id/txtShortSelfDescription"
+    android:text="Short self-description"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+
+<EditText 
+    android:id="@+id/inputShortSelfDescription"
+    android:gravity="top|left"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textMultiLine"
+    android:lines="5"
+    android:scrollbars="vertical"
+    android:singleLine="false"
+    />
+
+<Button
+    android:id="@+id/btnCreateSubscription"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Subscribe"
+    android:background="@color/list_background"
+    android:textColor="@color/white_color" />
+   
+</LinearLayout>

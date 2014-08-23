@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:layout_marginTop="5dp"
+     
+     >
+<GridLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:columnCount="2"
+    android:rowCount="5"
+    android:orientation="horizontal"
+    tools:context=".GridXMLActivity" 
+    android:scrollbars="vertical"
+    >
+    
+
+    <TextView 
+      android:id="@+id/txtName"
+      android:text="Name"
+      android:layout_gravity="left|center"
+      android:textSize="20dp"
+      android:textStyle="bold"
+      android:layout_marginLeft="8dp"
+      android:layout_marginBottom="10dp"
+      />
+    
+    <TextView 
+      android:id="@+id/txtNameA"
+      android:layout_gravity="left|center"
+      android:textSize="20dp"
+      android:layout_marginLeft="8dp"
+      android:layout_marginBottom="10dp"/>
+    
+    <TextView 
+      android:id="@+id/txtLocation"
+      android:text="Location"
+      android:layout_gravity="left|center"
+     android:textSize="20dp"
+      android:textStyle="bold"
+      android:layout_marginLeft="8dp"
+      android:layout_marginBottom="10dp"/>
+    
+    <TextView 
+      android:id="@+id/txtLocationA"
+      android:layout_gravity="left|center"
+      android:textSize="20dp"
+      android:layout_marginLeft="8dp"
+      android:layout_marginBottom="10dp"/>
+    
+    <TextView 
+      android:id="@+id/txtDateFrom"
+      android:text="Date from"
+      android:layout_gravity="left|center"
+      android:textSize="20dp"
+      android:textStyle="bold"
+      android:layout_marginLeft="8dp"
+      android:layout_marginBottom="10dp"/>
+    
+    <TextView 
+      android:id="@+id/txtDateFromA"
+      android:layout_gravity="left|center"
+      android:textSize="20dp"
+      android:layout_marginLeft="8dp"
+      android:layout_marginBottom="10dp"/>
+    
+    <TextView 
+      android:id="@+id/txtDateTo"
+      android:text="Date to"
+      android:layout_gravity="left|center"
+      android:textSize="20dp"
+      android:textStyle="bold"
+      android:layout_marginLeft="8dp"
+      android:layout_marginBottom="10dp"/>
+    
+    <TextView 
+      android:id="@+id/txtDateToA"
+      android:layout_gravity="left|center"
+      android:layout_marginLeft="8dp"
+      android:textSize="20dp"
+      android:layout_marginBottom="10dp"/>
+    
+    <TextView 
+      android:id="@+id/txtDescription"
+      android:lines="10"
+      android:layout_gravity="left|center"
+      android:textSize="20dp"
+      android:layout_width="match_parent"
+      android:layout_columnSpan="2"
+      android:layout_marginTop="15dp"
+      android:background="@color/light_gray"
+      android:layout_marginLeft="8dp"
+      android:layout_marginRight="8dp"
+      />
+</GridLayout>
+</ScrollView>

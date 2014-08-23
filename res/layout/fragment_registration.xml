@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:layout_marginLeft="15dp"
+     android:layout_marginTop="5dp"
+     
+     >
+<GridLayout 
+    android:id="@+id/GridLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:columnCount="2"
+    android:rowCount="11"
+    android:orientation="horizontal"
+    tools:context=".GridXMLActivity" 
+    android:scrollbars="vertical"
+    android:layout_marginRight="15dp"
+    >
+    
+    
+   <TextView 
+      android:id="@+id/txtFirstName"
+      android:text="First name"
+      android:layout_gravity="left|bottom"
+      android:textSize="18dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginRight="5dp"/>
+   
+   <EditText 
+       android:id="@+id/inputFirstName"
+       android:layout_gravity="left|top"
+       android:inputType="text"
+       android:layout_width="match_parent"
+       android:background="@color/light_gray"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+       />
+   
+   <TextView 
+      android:id="@+id/txtLastName"
+      android:text="Last name"
+      android:layout_gravity="left|bottom"
+      android:textSize="18dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginRight="5dp"
+      
+      />
+   
+   <EditText 
+       android:id="@+id/inputLastName"
+       android:layout_gravity="left|top"
+       android:inputType="text"
+       android:layout_width="match_parent"
+       android:background="@color/light_gray"
+       android:textSize="20dp"
+       android:layout_marginTop="15dp"
+       />
+   
+     <TextView 
+      android:id="@+id/txtNumber"
+      android:text="Phone number"
+      android:layout_gravity="left|bottom"
+      android:textSize="18dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginRight="5dp"
+      
+      />
+   
+   <EditText 
+       android:id="@+id/inputPhoneNumber"
+       android:layout_gravity="left|top"
+       android:inputType="text"
+       android:layout_width="match_parent"
+       android:background="@color/light_gray"
+       android:textSize="20dp"
+       android:layout_marginTop="15dp"
+       />
+   
+   <TextView 
+      android:id="@+id/txtEmail"
+      android:text="E-mail"
+      android:layout_gravity="left|bottom"
+      android:textSize="18dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginRight="5dp"
+     
+      />
+   
+   <EditText 
+       android:id="@+id/inputEmail"
+       android:layout_gravity="left|top"
+       android:inputType="text"
+       android:layout_width="match_parent"
+       android:background="@color/light_gray"
+       android:textSize="20dp"
+       android:layout_marginTop="15dp"
+       />
+   
+   <TextView 
+      android:id="@+id/txtUsername"
+      android:text="Username"
+      android:layout_gravity="left|bottom"
+      android:textSize="18dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginRight="5dp"
+      />
+   
+   <EditText 
+       android:id="@+id/inputUsername"
+       android:layout_gravity="left|top"
+       android:inputType="text"
+       android:layout_width="match_parent"
+       android:background="@color/light_gray"
+       android:textSize="20dp"
+       android:layout_marginTop="15dp"
+       />
+   
+    <TextView 
+      android:id="@+id/txtPassword"
+      android:text="Password"
+      android:layout_gravity="left|bottom"
+      android:textSize="18dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginRight="5dp"
+      />
+   
+    <EditText 
+       android:id="@+id/inputPassword"
+       android:layout_gravity="left|top"
+       android:password="true"
+       android:layout_width="match_parent"
+       android:background="@color/light_gray"
+       android:textSize="20dp"
+       android:layout_marginTop="15dp"
+       />
+
+    <TextView 
+      android:id="@+id/txtRole"
+      android:text="Role"
+      android:layout_gravity="left|top"
+      android:textSize="18dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginRight="5dp"
+      />
+    
+    <RadioGroup android:orientation="vertical"
+        
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        >
+        <RadioButton android:text="Employer" android:checked="true" android:id="@+id/radBtnEmployer"/>
+        <RadioButton android:text="Employee" android:id="@+id/radBtnEmployee"/>
+    </RadioGroup>
+    
+    
+    <TextView 
+      android:id="@+id/txtError"
+      android:layout_gravity="left|top"
+      android:layout_columnSpan="2"
+      android:textSize="18dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginRight="5dp"
+      />
+    
+    
+    <Button
+        android:id="@+id/btnUploadCV"
+        android:layout_gravity="left"
+        android:layout_columnSpan="2"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:text="Upload CV from dropbox"
+        android:background="@color/dropbox_color"
+        android:textColor="@color/white_color"
+        android:onClick="uploadCV" />
+    
+     <Button
+        android:id="@+id/btnRegistration"
+        android:layout_gravity="left"
+        android:layout_columnSpan="2"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:text="Register" 
+        android:onClick="register"
+        android:background="@color/list_background_pressed"
+         android:textColor="@color/white_color"
+         android:layout_marginBottom="30dp"
+        />
+     
+</GridLayout>
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:rowCount="3"
+    android:orientation="horizontal"
+    tools:context=".GridXMLActivity"
+  	 android:layout_margin="15dp"
+     >
+ 
+    <TextView 
+      android:id="@+id/txtAdNameN"
+      android:text="Name"
+      android:layout_gravity="left|bottom"
+      android:layout_columnSpan="2"
+      android:textSize="20dp"
+      android:textStyle="bold"
+      />
+    
+    <TextView 
+      android:id="@+id/txtAdDescriptionN"
+      android:text="Description"
+      android:layout_gravity="left|bottom"
+      android:layout_columnSpan="2"
+      android:lines="4"
+      android:textSize="17dp"
+      android:background="@color/light_gray"
+      android:layout_width="fill_parent"
+      android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnSubscribe"
+        android:layout_gravity="center|top"
+        android:text="Subscribe"
+        android:layout_column="0"
+       	android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:background="@color/list_background"
+        android:textColor="@color/white_color"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+      />
+    
+    <Button
+        android:id="@+id/btnViewAdDetailsN"
+        android:layout_gravity="right"
+        android:text="Details"
+       android:layout_width="120dp"
+        android:background="@color/list_background_pressed"
+        android:textColor="@color/white_color"
+        android:layout_marginRight="20dp"
+        android:layout_height="35dp"
+      />
+    
+</GridLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/GridLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:columnCount="2"
+    android:rowCount="6"
+    android:orientation="horizontal"
+    android:layout_margin="15dp"
+    tools:context=".GridXMLActivity" 
+    android:scrollbars="vertical"
+    >
+   
+     <TextView 
+      android:id="@+id/txtSignIn"
+      android:layout_gravity="left|top"
+      android:layout_columnSpan="2"
+      android:text="Enter your username and password"
+      android:textSize="17dp"
+      android:textStyle="bold"
+      android:layout_marginBottom="15dp"/>
+    
+
+   <TextView 
+      android:id="@+id/txtUsernameS"
+      android:text="Username"
+      android:layout_gravity="left|bottom"
+      android:textSize="18dp"
+      android:layout_marginRight="5dp"/>
+   
+   <EditText 
+       android:id="@+id/inputUsernameS"
+       android:layout_gravity="left|top"
+       android:inputType="text"
+       android:layout_width="match_parent"
+       android:background="@color/light_gray"
+       android:textSize="20dp"
+       />
+   
+    <TextView 
+      android:id="@+id/txtPasswordS"
+      android:text="Password"
+      android:layout_gravity="left|bottom"
+      android:textSize="18dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginRight="5dp"
+      />
+   
+    <EditText 
+       android:id="@+id/inputPasswordS"
+       android:layout_gravity="left|top"
+       android:password="true"
+       android:layout_width="match_parent"
+       android:background="@color/light_gray"
+       android:layout_marginTop="15dp"
+       android:textSize="20dp"
+       />
+
+    
+    <TextView 
+      android:id="@+id/txtErrorS"
+      android:layout_gravity="left|top"
+      android:layout_columnSpan="2"/>
+    
+    
+     <Button
+        android:id="@+id/btnSignIn"
+         android:layout_gravity="left|top"
+        android:layout_columnSpan="2"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:text="Sign in" 
+        android:background="@color/list_background_pressed"
+        android:textColor="@color/white_color"
+        />
+     
+     <Button
+        android:id="@+id/btnRegistration"
+         android:layout_gravity="left|top"
+        android:layout_columnSpan="2"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:text="Registration" 
+        android:background="@color/list_background"
+        android:textColor="@color/white_color"
+        />
+     
+</GridLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Find job</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="registrationUrl">http://192.168.43.58:9000/services/createUser</string>
+    <string name="signInUrl">http://192.168.43.58:9000/services/checkLogin</string>
+    <string name="getAdsFromPublisherUrl">http://192.168.43.58:9000/services/getAdsFromPublisher</string>
+    <string name="getAdSubscibersUrl">http://192.168.43.58:9000/services/getAdSubscribers</string>     
+    <string name="createNewAdUrl">http://192.168.43.58:9000/services/createAd</string>
+    <string name="createNewSubsciptionUrl">http://192.168.43.58:9000/services/createSubcription</string>
+    <string name="getNewAdsUrl">http://192.168.43.58:9000/services/adsNotSubByUser</string>
+    <string name="getSubscribedAdsByUserUrl">http://192.168.43.58:9000/services/subscribedAdsByUser</string>
+    <string name="getSearchedAdsUrl">http://192.168.43.58:9000/services/getSearchedAds</string>
+      
+     
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items_employeer">
+        <item >My ads</item>
+        <item >Create new ad</item>
+        <item >Logout</item>
+         <item >Subscribed users</item>
+         
+    </string-array>
+    
+    <string-array name="nav_drawer_items_employee">
+        <item >New ads</item>
+        <item >Subscribed ads</item>
+        <item >Search ads</item>
+        <item > Logout</item>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+         <item>@drawable/ic_whats_hot</item>
+    </array>
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+</resources>
